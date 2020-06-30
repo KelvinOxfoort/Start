@@ -1,37 +1,134 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Startproject</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Roboto:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="functions.js"></script>
+    <title>Voetbal voor beginners</title>
 </head>
+
 <body>
-    <h1>Boodschappenlijst</h1>
-    <ul>
-       <li>Melk</li>
-       <li>Ei</li>
-       <li>Brood
-           <ul>
-               <li>Volkorenbrood</li>
-               <li>Frikandellebroodje</li>
-           </ul>
-        </li>  
-    </ul>
-    
-    <h1>Boodschappenlijst</h1>
-    <ol>
-        <li>Melk</li>
-        <li>Ei</li>
-        <li>Brood</li>
+    <header id="header">
+        <div>
+            <a href="index.html"><img class="logo" src="uploads/LOGO.png" alt="logo"></a>
+        </div>
+        <nav>
             <ul>
-                <li>Volkorenbrood</li>
-                <li>Frikandellebroodje</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ladder.html">Ladder</a></li>
+            <li><a href="techniek.html">Techniek</a></li>
+            <li><a href="passing.html">Passing</a></li>
+            <li id="menu">Info</li>
             </ul>
-        <li>Snoep</li>
-    </ol>
-    
-    <h1>Albertje Hinna</h1>
-        <p>Ga naar <a href="https://www.ah.nl/">Albertje Hinna</a> voor deze producten.</p>
+            <ul id="dropdown">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="overons.html">Over Ons</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <span>Alles voor de beginnende</span>
+                    <h1>VOETBALLER</h1>
+                    <p>Leg met deze website een solide basis aan in je voetbal carrière</p>
+                </div>
+            </div>
+        </div>
+        <section>
+            <H1>BELANGRIJKE QUOTES</H1>
+            <div class="quote">
+                <blockquote cite="https://shmaltzandmenudo.wordpress.com/2016/09/04/famous-sayings-26-hard-work-beats-talent/#:~:text=The%20meaning%20of%20%E2%80%9CHard%20work,use%20it%20after%20being%20drafted.">
+                    <p>Hard werk verslaat talent, wanneer talent niet hard werkt.</p>
+                    <cite>Tim Notke</cite>
+                </blockquote>
+                <blockquote cite="https://www.archetype-eu.com/nl/nieuws/voetbal-is-simpel-maar-simpel-voetballen-blijkt-vaak-het-moeilijkste-wat-er-is-johan-cruijff.html#:~:text=Johan%20Cruijff%20heeft%20wel%20meer,quote%2C%20waarvoor%20onze%20hartelijke%20dank.">
+                    <p>Voetbal is simpel, maar simpel voetballen blijkt vaak het moeilijkste wat er is.</p>
+                    <cite>Johan Cruijff</cite>
+                </blockquote>
+            </div>
+        </section>
+        <hr>
+        <section class="mediasection">
+            <h2>FOTO'S, VIDEO'S ETC. </h2>
+            <ul>
+                <li class="fotovids1"></li>
+                <li class="fotovids2">
+                    <iframe src="https://www.youtube.com/embed/tMY5Cj39xN8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li class="fotovids3">
+                    <video controls>
+                      <source src="./uploads/filmpje1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+                <li class="fotovids4"><video controls>
+                      <source src="./uploads/filmpje2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video></li>
+                <li class="fotovids5"></li>
+            </ul>
+        </section>
+        <hr>
+        <section class="plaatjesection">
+            <ul>
+                <li class="plaatjebox">
+                    <div class="plaatje"></div>
+                    <div class="textbox">
+                        <h4>Ladder</h4>
+                        <p>De ladder, beter bekend als de speedladder, is een gereedschap dat elke voetballer zou moeten hebben. Het kan perfect worden gebruikt als warming-up, maar het is voornamelijk bedoeld om belangrijke vaardigheden te verbeteren...
+                        </p>
+                        <p><a href="ladder.html">Lees meer</a></p>
+                    </div>
+                </li>
+                <li class="plaatjebox">
+                    <div class="plaatje tweede"></div>
+                    <div class="textbox">
+                        <h4>Techniek</h4>
+                        <p>Techniek gaat om de balcontrole. Het is zeer belangrijk om een goede balcontrole te hebben. Het kan je namelijk uit lastige situaties helpen. Stel je voor dat je word ingesloten door twee personen van je tegenstander. Je ziet een
+                            opening en probeert je er... </p>
+                        <p><a href="techniek.html">Lees meer</a></p>
+                    </div>
+                </li>
+                <li class="plaatjebox">
+                    <div class="plaatje derde"></div>
+                    <div class="textbox">
+                        <h4>Passing</h4>
+                        <p>Voetbal is een team sport en daarom ontkom je niet aan passen. Passing is misschien wel het belangrijkste onderdeel in de voetballerij. Als je niet goed kan passen komen de ballen niet aan bij je teamgenoten en kom je niet tot
+                            scoren...
+                        </p>
+                        <p><a href="passing.html">Lees meer</a></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footercolumns">
+            <ul class="footerpagina">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ladder.html">Ladder</a></li>
+                <li><a href="passing.html">Passing</a></li>
+                <li><a href="techniek.html">Techniek</a></li>
+            </ul>
+            <ul class="footerinfo">
+                <li><a href="overons.html">Over Ons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="footercontact">
+                <li><i class="fa fa-phone"></i> <a href="tel:0611111111">06 11 11 11 11</a>
+                </li>
+                <li><i class="fa fa-envelope"></i> <a href="mailto:oxfoort@test.com">oxfoort@test.com</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>

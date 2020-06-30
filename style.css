@@ -1,0 +1,582 @@
+:root {
+    --header-footer-kleur: #037d50;
+    --color-text: #ffffdb;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #90ee90;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cantora One', sans-serif;
+}
+
+.overzicht {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+main {
+    min-height: 75vh;
+}
+
+h1 {
+    margin: 0;
+    padding: 2rem 0rem;
+}
+
+
+
+
+header {
+    background-color: #037d50;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 116px;
+}
+
+header li, header a {
+    text-decoration: none;
+    color: unset;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+header li:hover {
+    transition: ease-in-out 0.3s all;
+    color: #037d50;
+    background: #90ee90;
+    cursor: pointer;
+
+}
+
+header li {
+    color: var(--color-text);
+    text-shadow: -1px 0px 3px white;
+}
+
+nav li {
+    list-style: none;
+    line-height: 5;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 30%;
+    margin-left: 30%;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 6.5;
+    position: absolute;
+}
+
+#dropdown {
+    display: none;
+    position: absolute;
+    width: 40%;
+    background: #037d50;
+    top: calc( 100% - 1px );
+    right: -28.4%;
+    margin: 0;
+}
+
+#dropdown.active {
+    display: block;
+}
+
+#dropdown li{
+    line-height: 3;
+}
+
+.logo {
+    width: 250px;
+    margin-left: 50%;
+}
+
+
+footer {
+    background-color: var(--header-footer-kleur);
+}
+
+.footercolumns {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footercolumns li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: unset;
+    line-height: 1.5;
+}
+
+footer li{
+    color: #ffffdb;
+    text-shadow: -1px 0px 3px white;
+}
+
+footer a:hover {
+    transition: ease-in-out 0.3s all;
+    color: #90ee90;
+}
+
+footer ul {
+    width: 28%;
+}
+
+.footerinfo {
+    text-align: center;
+}
+
+.footercontact {
+    text-align: right;
+}
+
+.container {
+    padding-top: 10%;
+}
+
+
+.banner {
+    background-image: url(https://cdn.pixabay.com/photo/2014/10/14/20/24/the-ball-488718_1280.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-size: cover;
+}
+
+.banner-content {
+    color: #000;
+    width: 55%;
+    padding: 50px 0 50px 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border: solid 3px #037d50;
+    background-color: #ffffff6e;
+}
+
+.quote {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.quote blockquote {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+
+section h1 {
+    text-align: center;
+}
+
+
+
+
+.contact-pagina h1 {
+    text-align: center;
+}
+
+.contact-formulier {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-formulier-naam {
+    display: initial;
+    width: 49.6%;
+    box-sizing: border-box;
+    margin: 16px 0 0 0;
+    border: 0;
+    padding: 20px 40px;
+    outline: none;
+}
+
+.contact-formulier-naam:focus {
+    box-shadow: 0 0 10px 4px #037d50;
+}
+
+.contact-formulier-email {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    padding: 20px 40px;
+    outline: none;
+}
+
+.contact-formulier-email:focus {
+    box-shadow: 0 0 10px 4px #037d50;
+}
+
+.contact-formulier-tekst {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    padding: 20px 40px;
+    outline: none;
+}
+
+.contact-formulier-tekst:focus {
+    box-shadow: 0 0 10px 4px #037d50;
+}
+
+textarea.contact-formulier-tekst {
+    resize: none;
+    height: 120px;
+}
+
+.contact-formulier-knop {
+    float: right;
+    margin-bottom: 50px;
+    border: 0;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-formulier-knop:hover {
+    background: #e0e0e0;
+}
+
+section,
+hr,
+.footercolumns {
+    margin: 0 10%;
+}
+
+.mediasection ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.fotovids1 {
+    background-image: url(./uploads/voetballende_kinderen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 35%;
+}
+
+.fotovids2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 35%;
+}
+
+.fotovids3,
+.fotovids4 {
+    background-color: black;
+}
+
+
+.fotovids5 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/29/09/28/football-1486353_960_720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 75%;
+}
+
+.mediasection ul li {
+    width: 19%;
+}
+
+.plaatjesection ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.plaatjesection ul li {
+    width: 28%;
+    background-color: #d0fad0;
+    box-shadow: 1px 1px 9px 0px black;
+}
+
+.plaatjesection div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.plaatje {
+    background: url(https://media.defense.gov/2013/Sep/09/2000710340/-1/-1/0/130829-D-RT812-259.JPG) no-repeat;
+    background-size: cover;
+    background-position-y: 98%;
+    height: 190px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.tweede {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGQujdtUYY6ZvVAVyYnViHFfmqRA8QfeRchdvbMtoRneMGzXFF&usqp=CAU) no-repeat;
+    background-size: cover;
+}
+
+.derde {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbiFGD33UEuO2sUuPWsS63qn6kfET_udMECwd8WcEFtynlFjDH&usqp=CAU) no-repeat;
+    background-size: cover;
+    background-position-y: 11%;
+}
+
+.textarea p {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.paginaplaatje {
+    height: 130px;
+    width: 280px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.map {
+    height: 300px;
+}
+
+.goed-gedaan {
+    margin-bottom: 50px;
+}
+
+
+table {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+}
+
+table, th, td {
+    border: solid 1px black;
+}
+
+th, td {
+    padding: 5px;
+}
+
+ table {
+        margin-bottom: 60px;
+    }
+    
+    .ontzichtbaar {
+        border: solid 1px #90ee90;
+    }
+
+
+@media (max-width: 1023px) {
+
+    .logo {
+        margin-left: 10%;
+    }
+
+    nav {
+        margin-left: 10%;
+    }
+
+    .banner {
+        background-position-x: 56%;
+    }
+
+    .container {
+        padding-top: 60%;
+    }
+    .plaatjesection ul {
+        flex-wrap: wrap;
+    }
+    .plaatjesection ul li {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .plaatjebox div {
+        display: inline-block;
+        width: 40%;
+        vertical-align: middle;
+    }
+
+    .tweede {
+        float: right;
+        margin-top: 5%;
+    }
+
+    .mediasection ul {
+        flex-wrap: wrap;
+    }
+    .mediasection ul li {
+        flex-basis: 30%;
+    }
+    .fotovids4,
+    .fotovids5 {
+        flex-basis: 48% !important;
+        margin-top: 30px;
+    }
+
+    .map {
+        height: 314px;
+    }
+    
+    #dropdown {
+       right: -1.0%; 
+    }   
+    
+    .overonstekst {
+    margin-bottom: 60px;
+    }
+    
+    table {
+        margin-bottom: 226px;
+    }
+    
+    .ontzichtbaar {
+        border: solid 1px #90ee90;
+    }
+        
+
+}
+
+@media (max-width: 767px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin-left: 17%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        line-height: 2.5;
+        margin-left: 0%;
+        margin-bottom: 35px;
+    }
+
+    .banner-content {
+        padding: 50px;
+    }
+
+    .banner {
+        background-position-x: 90%;
+    }
+
+    .quote {
+        flex-wrap: wrap;
+    }
+
+    .mediasection ul {
+        flex-wrap: wrap;
+    }
+
+    .mediasection ul li {
+        flex-basis: 30%;
+    }
+
+    .plaatjebox div {
+        width: 86%;
+    }
+
+    .contact-formulier-naam {
+        width: 100%
+    }
+
+    .footercolumns {
+        flex-wrap: wrap;
+    }
+
+    footer ul {
+        width: 45%;
+    }
+
+    footer ul {
+        width: 100%;
+    }
+
+    footer ul li {
+        text-align: center;
+    }
+
+
+    .mediasection ul li {
+        flex-basis: 100% !important;
+        margin: 20px 0;
+        min-height: 172px;
+    }
+
+    nav > li {
+        flex-basis: 10%;
+        width: 59px;
+    }
+    
+    #dropdown {
+        width: 35%;
+        right: 0;
+        text-align: right;
+    }
+    
+    table {
+    margin-bottom: 90px;
+    }
+    
+    header li {
+        padding: 5px;
+    }
+    
+    .logo {
+        margin-bottom: -115px;
+    }
+    
+    header {
+        height: 200px;
+    }
+}
